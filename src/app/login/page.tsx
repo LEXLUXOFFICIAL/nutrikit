@@ -1,3 +1,4 @@
+// src/app/login/page.tsx
 "use client";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
@@ -10,7 +11,8 @@ export default function LoginPage() {
       <Auth
         supabaseClient={supabase}
         appearance={{ theme: ThemeSupa }}
-        providers={[]} // email only
+        view="magic_link"                 // 👈 force email magic link only
+        providers={[]}                    // no OAuth yet
         redirectTo={`${process.env.NEXT_PUBLIC_SITE_URL}/dashboard`}
       />
     </div>
