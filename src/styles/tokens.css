@@ -1,0 +1,8 @@
+:root{
+  --nk-bg:#fff; --nk-surface:#f7f7f8; --nk-text:#0b0b0c; --nk-muted:#72767e;
+  --nk-accent:#0ea5e9; --nk-accent-2:#6366f1; --nk-danger:#ef4444; --nk-success:#22c55e;
+  --nk-radius:12px; --nk-shadow:0 6px 24px rgba(0,0,0,0.08);
+}
+.button-primary{background:var(--nk-text);color:#fff;border-radius:var(--nk-radius);padding:10px 14px;}
+.button-outline{border:1px solid #e5e7eb;border-radius:var(--nk-radius);padding:10px 14px;}
+.card{background:var(--nk-surface);border:1px solid #eef0f2;border-radius:var(--nk-radius);box-shadow:var(--nk-shadow);}
